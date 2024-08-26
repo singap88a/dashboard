@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Dashboard  </title>
+    <link rel="stylesheet" href="dashboard.css">
+    <style>
+ 
+
+    </style>
+</head>
+<body>
+
+<header>
+    <h2>Project Management Dashboard </h2>
+</header>
+
+<div class="container">
+    <h1>Project Progress</h1>
+
+    <!-- Search Input -->
+    <input type="text" id="searchInput" placeholder="Search for tasks..." onkeyup="searchTasks()">
+
+    <!-- Task Table -->
+    <table>
+        <thead>
+            <tr>
+                <th>Task</th>
+                <th>Assigned To</th>
+                <th>Deadline</th>
+                <th>Status</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="taskTableBody">
+            <!-- Tasks will be dynamically inserted here -->
+        </tbody>
+    </table>
+
+    <button class="btn" onclick="addTask()">Add New Task</button>
+</div>
+ 
+<script src="dashboard.js"></script>
+</body>
+</html>
